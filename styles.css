@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&family=Dela+Gothic+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    opacity: 1;
+    font-family: 'Red Rose', cursive;
+}
+body {
+    background-image: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)) ,url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 135%;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    height: 7vh;
+}
+nav img {
+    width: 10rem;
+    margin-left: 1rem;
+}
+nav .menu ul {
+    display: flex;
+    color: #ffc233;
+    list-style: none;
+}
+nav .menu ul li {
+    padding: 0 1.8rem ;
+    font-size: large;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: #ffc233;
+}
+nav button {
+    position: relative;
+    background-color: #FF515F;
+    padding: 0.4rem 2rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    /* align-items: end; */
+    /* justify-content: end; */
+}
+section {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+}
+section h1 {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffc233;
+    font-size: 5rem;
+    padding-top: 8rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    line-height: 1.2;
+}
+section button {
+    display: inline-block;
+    justify-content: center;
+    background-color: #FF515F;
+    border: none;
+    color: white;
+    padding: 1rem 0.5rem;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 1.7% 42% 0;
+    letter-spacing: 0.06rem;
+    cursor: pointer;
+}
+section .scroll {
+    /* width: 10rem;
+    display: flex;
+    align-items: end; */
+    display: flex;
+    flex-direction: row-reverse;
+} 
+section .scroll img {
+    width: 8.8rem;
+    margin: 1rem 2rem;
+}
+
+@media (min-width:600px) and (max-width:720px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .menu ul {
+        display: flex;
+        flex-direction: column;
+        color: #ffc233;
+        list-style: none;
+        padding: 2rem auto;
+    }
+    section button {
+         font-size: medium;
+         padding: 1rem 1.7rem;
+         justify-content: center;
+    }
+    section h1 {
+        font-size: 2rem;
+        padding: 0 7rem;
+        padding-top: 8rem;
+    }
+}
